@@ -1,0 +1,42 @@
+.card {
+    padding: 16px;
+    cursor: pointer;
+
+    .card__thumnail__content {
+        text-align: center;
+    }
+
+    .card__thumnail__img {
+        border-radius: 10px;
+        width: 180px;
+        height: 180px;
+    }
+
+    .card__detail__content {
+        padding: 10px 0px 0px 0px;
+    }
+
+    .card__detail__price {
+        font-weight: 500;
+        font-size: 28px;
+    }
+
+    .card__detail__free_shipping {
+        width: 20px;
+        height: 20px;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    .card__detail__state {
+        color: #999999;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .card__detail__description {
+        font-weight: 500;
+        font-size: 18px;
+    }
+    
+}
