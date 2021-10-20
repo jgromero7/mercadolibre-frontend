@@ -1,69 +1,88 @@
 .container {
-    .container__navigation {
+    &__navigation {
         color: #999999;
         font-size: 14px;
         padding: 18px 0px;
     }
 
-    .container__viewer__item {
+    &__viewer__item {
         background-color: white;
         padding: 32px;
-    }
 
-    .container__viewer__item__gallery {
-        text-align: center;
-    }
-
-    .container__viewer__item__paragraph {
-        color: #333333;
-        font-size: 14px;
-        margin-bottom: 14px;
-    }
-
-    .container__viewer__item__title {
-        color: #333333;
-        font-size: 24px;
-        margin-bottom: 32px;
-    }
-
-    .container__viewer__item__price {
-        color: #333333;
-        font-size: 46px;
-        font-weight: 400;
-        margin-bottom: 32px;
-    }
-
-    .container__viewer__item__button {
-        width: 100%;
-        cursor: pointer;
-        padding: 15px 0px;
-        color: white;
-        background-color: #3483FA;
-        font-size: 18px;
-        font-weight: 400;
-        margin-top: 32px;
-        margin-right: 32px;
-        border-radius: 5px;
-        border: none;
-        outline: none;
-
-        &:hover {
-            background-color: #2968c8;
-            transition-delay: background-color .2s ease-in;
+        @media only screen and (max-width: 576px) {
+            padding: 5px;
         }
-    }
 
-    .container__viewer__item__description__title {
-        color: #333333;
-        font-size: 28px;
-        margin-bottom: 32px;
-        font-weight: 500;
-    }
+        &__gallery {
+            text-align: center;
+            img {
+                max-width: 680px;
 
-    .container__viewer__item__description__paragraph {
-        color: #999999;
-        font-size: 16px;
-        margin-bottom: 32px;
-        font-weight: 500;
+                @media only screen and (max-width: 576px) {
+                    width: 100%;
+                }
+            }
+        }
+    
+        &__paragraph {
+            color: #333333;
+            font-size: 14px;
+            margin-bottom: 14px;
+        }
+    
+        &__title {
+            color: #333333;
+            font-size: 24px;
+            margin-bottom: 32px;
+        }
+    
+        &__price {
+            color: #333333;
+            font-size: 46px;
+            font-weight: 400;
+            margin-bottom: 32px;
+
+            @media only screen and (max-width: 576px) {
+                font-size: 36px;
+            }
+        }
+    
+        &__button {
+            width: 100%;
+            cursor: pointer;
+            padding: 15px 0px;
+            color: white;
+            background-color: #3483FA;
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 32px;
+            margin-right: 32px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+    
+            &:hover {
+                background-color: #2968c8;
+                transition-delay: background-color .2s ease-in;
+            }
+
+            @media only screen and (max-width: 576px) {
+                margin-right: 0px;
+            }
+        }
+    
+        &__description__title {
+            color: #333333;
+            font-size: 28px;
+            margin-bottom: 32px;
+            font-weight: 500;
+        }
+    
+        &__description__paragraph {
+            color: #999999;
+            font-size: 16px;
+            margin-bottom: 32px;
+            font-weight: 500;
+        }
     }
 }
