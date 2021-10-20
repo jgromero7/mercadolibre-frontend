@@ -10,15 +10,15 @@ export default memo(({location}) => {
 
 	return (
 		<div className="header">
-            <div className="grid">
-				<div className="grid-1"></div>
-				<div className="grid-1">
-					<img className="header__logo" src={LogoML} alt="Logo Mercado Libre" onClick={handleGoToHome} />
+			<div className="grid">
+				<div className="grid-row" style={{flexWrap: 'nowrap'}}>
+					<div className="grid-col-default-1" style={{textAlign: 'center', padding: '5px'}}>
+						<img className="header__logo" src={LogoML} alt="Logo Mercado Libre" onClick={handleGoToHome} />
+					</div>
+					<div className="grid-col-default-11" style={{padding: '5px'}}>
+						<SearchBar />
+					</div>
 				</div>
-				<div className="grid-9">
-					<SearchBar />
-				</div>
-				<div className="grid-1"></div>
 			</div>
 		</div>
 	)

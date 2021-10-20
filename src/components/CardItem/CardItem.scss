@@ -2,41 +2,45 @@
     padding: 16px;
     cursor: pointer;
 
-    .card__thumnail__content {
+    &__thumnail__content {
         text-align: center;
+        margin: auto;
     }
 
-    .card__thumnail__img {
+    &__thumnail__img {
         border-radius: 10px;
         width: 180px;
         height: 180px;
     }
 
-    .card__detail__content {
+    &__detail__content {
         padding: 10px 0px 0px 0px;
     }
 
-    .card__detail__price {
+    &__detail__price {
         font-weight: 500;
         font-size: 28px;
+        color: #333333;
     }
 
-    .card__detail__free_shipping {
+    &__detail__free_shipping {
         width: 20px;
         height: 20px;
         margin-top: 5px;
         margin-left: 10px;
+        margin-right: 10px;
     }
 
-    .card__detail__state {
+    &__detail__state {
         color: #999999;
         font-size: 12px;
         margin-top: 20px;
     }
 
-    .card__detail__description {
+    &__detail__description {
         font-weight: 500;
         font-size: 18px;
+        color: #666666;
     }
     
 }

@@ -4,8 +4,8 @@ const urlApi = `${envs.BASE_URL}api/items`
 
 class MercadoLibreService {
 
-    search(query) {
-        return axios.get(`${urlApi}?q=${query}`)
+    search(query, limit = null) {
+        return axios.get(`${urlApi}?q=${query}${limit ? '&limit='+limit : ''}`)
             .then(({data}) => data)
             .catch((err) => {
                 throw new Error(err)
